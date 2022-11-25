@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript & DOM</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <div id="page-banner">
+                <h1 class="title">Bookarama</h1>
+                <p>Books for Ninjas</p>
+                <form id="search-books">
+                    <input type="text" placeholder="Search Books">
+                </form>
+            </div>
+        </header>
+        <div id="book-list">
+            <h2 class="title">Books to Read</h2>
+            <ul>
+                <li>
+                    <span class="name">Run with the wind</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Kafka on the Shore</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Go with the clouds</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Somali and the forest spirit</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+
+        <form id="add-book">
+            <input type="checkbox" id="hide">
+            <label for="hide">Hide all books</label>
+            <input type="text" placeholder="Add a Book...">
+            <button>Add</button>
+        </form>
+        <div id="tabbed-content">
+            <ul class="tabs">
+              <li data-target="#about">About</li>
+              <li data-target="#contact">Contact</li>
+              <li data-target="#support">Support</li>
+            </ul>
+            <div class="panel" id="about">
+              <p>Content for about tab...</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum corrupti magni aspernatur cupiditate quibusdam commodi ullam. Rerum at officiis dolorum sequi? Ullam incidunt cumque vel ut exercitationem quasi quam quo?</p>
+            </div>
+            <div class="panel" id="contact">
+              <p>Content for contact tab...</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id nunc porta urna ornare rhoncus. Ut convallis ante at.</p>
+            </div>
+            <div class="panel" id="support">
+                <p>Content for support tab...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ducimus assumenda architecto libero, ut quo ratione sapiente nobis dolorum quidem tenetur amet alias, corrupti consequuntur impedit facilis odio asperiores blanditiis?</p>
+              </div>
+        </div>
+
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
